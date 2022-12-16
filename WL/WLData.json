@@ -1,0 +1,102 @@
+{
+            "list": [
+                {
+                    "productId": "10001",
+                    "productName": "可口可乐",
+                    "productJumpType": "101",
+                    "productJumpUrl": "路由",
+                    "productType": "",
+                    "productImage": "https://img2.baidu.com/it/u=1917749926,3154825155&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=453",
+                    "parts": [
+                        {
+                            "partsId": "20001",
+                            "partsName": "易拉罐"
+                        }
+                    ]
+                },
+                {
+                    "productId": "10002",
+                    "productName": "百事可乐",
+                    "productJumpType": "102",
+                    "productJumpUrl": "路由",
+                    "productType": "",
+                    "productImage": "https://img2.baidu.com/it/u=3078202002,1613952203&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500",
+                    "parts": [
+                        {
+                            "partsId": "20002",
+                            "partsName": "小塑"
+                        }
+                    ]
+                },
+                {
+                    "productId": "10003",
+                    "productName": "格瓦斯",
+                    "productJumpType": "103",
+                    "productJumpUrl": "路由",
+                    "productType": "",
+                    "productImage": "https://img1.baidu.com/it/u=1370566788,2811578675&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
+                    "parts": [
+                        {
+                            "partsId": "20003",
+                            "partsName": "大塑"
+                        }
+                    ]
+                },
+                {
+                    "productId": "10004",
+                    "productName": "秋林里道斯",
+                    "productJumpType": "104",
+                    "productJumpUrl": "路由",
+                    "productType": "",
+                    "productImage": "http://t13.baidu.com/it/u=4201795230,2083773012&fm=224&app=112&f=JPEG?w=500&h=500&s=77E62EF642E6C6EF8A2769F403008028",
+                    "parts": [
+                        {
+                            "partsId": "20004",
+                            "partsName": "礼盒"
+                        }
+                    ]
+                },
+                {
+                    "productId": "10005",
+                    "productName": "芒果",
+                    "productJumpType": "105",
+                    "productJumpUrl": "路由",
+                    "productType": "",
+                    "productImage": "https://img1.baidu.com/it/u=983892031,1587020884&fm=253&fmt=auto&app=120&f=JPEG?w=728&h=500",
+                    "parts": [
+                        {
+                            "partsId": "20005",
+                            "partsName": "榨汁"
+                        }
+                    ]
+                },
+                {
+                    "productId": "10006",
+                    "productName": "榴莲",
+                    "productJumpType": "106",
+                    "productJumpUrl": "路由",
+                    "productType": "",
+                    "productImage": "https://img1.baidu.com/it/u=1657510320,3397599876&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=463",
+                    "parts": [
+                        {
+                            "partsId": "20006",
+                            "partsName": "芝士焗榴莲"
+                        }
+                    ]
+                },
+                {
+                    "productId": "10007",
+                    "productName": "法师",
+                    "productJumpType": "107",
+                    "productJumpUrl": "路由",
+                    "productType": "",
+                    "productImage": "https://img2.baidu.com/it/u=2415196010,3816525818&fm=253&fmt=auto&app=120&f=JPEG?w=310&h=268",
+                    "parts": [
+                        {
+                            "partsId": "20007",
+                            "partsName": "中路"
+                        }
+                    ]
+                }
+            ]
+    }
