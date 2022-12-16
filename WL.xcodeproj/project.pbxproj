@@ -145,8 +145,8 @@
 				4D8A5F8929226A1C00C75394 /* AppDelegate.m */,
 				4D8A5F8B29226A1C00C75394 /* SceneDelegate.h */,
 				4D8A5F8C29226A1C00C75394 /* SceneDelegate.m */,
-				4D9AD7BC29371065006F7F71 /* test_oc */,
-				4D9AD7B82936FEC4006F7F71 /* test_swift */,
+				4D9AD7BC29371065006F7F71 /* Swift-OC */,
+				4D9AD7B82936FEC4006F7F71 /* OC-Swift */,
 				4D8A5FC129226A8E00C75394 /* Controller */,
 				4D8A5FC029226A8300C75394 /* View */,
 				4D8A5FBF29226A7300C75394 /* Model */,
@@ -209,22 +209,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		4D9AD7B82936FEC4006F7F71 /* test_swift */ = {
+		4D9AD7B82936FEC4006F7F71 /* OC-Swift */ = {
 			isa = PBXGroup;
 			children = (
 				4D9AD7BA2936FF1C006F7F71 /* KLSwiftViewController.swift */,
 				4D9AD7B92936FF1B006F7F71 /* WL-Bridging-Header.h */,
 			);
-			path = test_swift;
+			path = "OC-Swift";
 			sourceTree = "<group>";
 		};
-		4D9AD7BC29371065006F7F71 /* test_oc */ = {
+		4D9AD7BC29371065006F7F71 /* Swift-OC */ = {
 			isa = PBXGroup;
 			children = (
 				4D9AD7BD2937107F006F7F71 /* KLOCViewController.h */,
 				4D9AD7BE2937107F006F7F71 /* KLOCViewController.m */,
 			);
-			path = test_oc;
+			path = "Swift-OC";
 			sourceTree = "<group>";
 		};
 		A0F5AAABC4EE950931CF60DE /* Pods */ = {
