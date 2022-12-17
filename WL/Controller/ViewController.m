@@ -34,7 +34,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"哈尔滨中央大街";
+    self.navigationItem.title = @"哈尔滨------中央大街";
     self.model = [self readLocalFileWithName:@"WLData"];
 
     [self.view addSubview:self.tableView];
