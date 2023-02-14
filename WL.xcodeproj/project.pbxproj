@@ -50,6 +50,7 @@
 		3CC487EE6367A7B52BF8B70C /* Pods_WLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAFF0EDC500F6DC6AE81BD8 /* Pods-WL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WL.debug.xcconfig"; path = "Target Support Files/Pods-WL/Pods-WL.debug.xcconfig"; sourceTree = "<group>"; };
 		41CB57FA27C6695AB6EC6C7C /* Pods-WL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WL.release.xcconfig"; path = "Target Support Files/Pods-WL/Pods-WL.release.xcconfig"; sourceTree = "<group>"; };
+		4D29112E299B412D003488E7 /* KL.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KL.pch; sourceTree = "<group>"; };
 		4D8A5F8529226A1C00C75394 /* WL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8A5F8829226A1C00C75394 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4D8A5F8929226A1C00C75394 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 				4D8A5F9929226A1F00C75394 /* Info.plist */,
 				4D8A5F9A29226A1F00C75394 /* main.m */,
 				4DCD2C0729228454005D2721 /* WLData.json */,
+				4D29112E299B412D003488E7 /* KL.pch */,
 			);
 			path = WL;
 			sourceTree = "<group>";
@@ -673,6 +675,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V2W4L7458M;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/likaiqiang/Desktop/gitlib/WL/WL/KL.pch;
 				INFOPLIST_FILE = WL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -680,7 +684,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kinglee.WL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WL/test_swift/WL-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/likaiqiang/Desktop/gitlib/WL/WL/OC-Swift/WL-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -695,6 +699,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V2W4L7458M;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/likaiqiang/Desktop/gitlib/WL/WL/KL.pch;
 				INFOPLIST_FILE = WL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -702,7 +708,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kinglee.WL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WL/test_swift/WL-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/likaiqiang/Desktop/gitlib/WL/WL/OC-Swift/WL-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

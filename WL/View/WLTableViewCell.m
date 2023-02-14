@@ -29,10 +29,10 @@
     return self;
 }
 
-
+//
 - (void)addCustomVIew {
-    [self addSubview:self.image];
-    [self addSubview:self.customView];
+    [self.contentView addSubview:self.image];
+    [self.contentView addSubview:self.customView];
 }
 
 
@@ -41,7 +41,6 @@
     
     [self loadCellData];
 }
-
 
 - (void)loadCellData {
     self.image.productDataModel = self.dataModel;
@@ -67,10 +66,7 @@
  */
 - (WLCustomView *)customView {
     if (!_customView) {
-        _customView = [[WLCustomView alloc] initWithFrame:CGRectMake(self.frame.size.height,
-                                                                     0,
-                                                                     self.frame.size.width - self.frame.size.height,
-                                                                     self.frame.size.height)];
+        _customView = [[WLCustomView alloc] initWithFrame:CGRectZero];
         _customView.delegate = self;
     }
     return _customView;
@@ -79,14 +75,23 @@
 - (WLImageView *)image {
  
     if (!_image) {
-        _image = [[WLImageView alloc] initWithFrame:CGRectMake(0,
-                                                               0,
-                                                               self.frame.size.height,
-                                                               self.frame.size.height)];
+        _image = [[WLImageView alloc] initWithFrame:CGRectZero];
         _image.delegate = self;
     }
     return _image;
 }
 
+// 更新UI
+- (void)layoutSubviews {
+    self.image.frame = CGRectMake(0,
+                                  0,
+                                  self.frame.size.height,
+                                  self.frame.size.height);
+    
+    self.customView.frame = CGRectMake(self.frame.size.height,
+                                       0,
+                                       self.frame.size.width - self.frame.size.height,
+                                       self.frame.size.height);
+}
 
 @end

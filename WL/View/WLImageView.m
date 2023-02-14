@@ -50,19 +50,27 @@
                         placeholderImage:[UIImage imageNamed:@"12138"]];    
 }
 
-
+// 点击事件
 - (void)selectImageView {
     if (self.delegate && [self.delegate respondsToSelector:@selector(selectImageViewData:)]) {
         [self.delegate selectImageViewData:self.productDataModel];
     }
 }
 
-
+// 添加   控件
 - (UIImageView *)pictureView {
     if (!_pictureView) {
-        _pictureView = [[UIImageView alloc] initWithFrame:self.frame];
+        _pictureView = [[UIImageView alloc] init];
     }
     return _pictureView;
+}
+
+// 更新UI
+- (void)layoutSubviews {
+    self.pictureView.frame = CGRectMake(0,
+                                        0,
+                                        self.frame.size.width,
+                                        self.frame.size.height);
 }
 
 @end

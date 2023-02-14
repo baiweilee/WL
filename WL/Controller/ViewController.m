@@ -34,7 +34,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"哈尔滨中央大街";
+    self.navigationItem.title = @"哈尔滨--中央大街";
     self.model = [self readLocalFileWithName:@"WLData"];
 
     [self.view addSubview:self.tableView];
@@ -70,6 +70,10 @@
         cell.dataModel = [self.model.list objectAtIndex:indexPath.row];
     }
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 50;
 }
 
 // UITableViewDelegate

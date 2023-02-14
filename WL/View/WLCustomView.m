@@ -22,7 +22,6 @@
     if (self = [super initWithFrame:frame]) {
         
         self.userInteractionEnabled = YES;
-        
         [self addCustomView];
     }
     return self;
@@ -32,7 +31,6 @@
 - (void) addCustomView {
     // 添加标题
     [self addSubview:self.titleLabel];
-    
     
     UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                           action:@selector(selectCustomView)];
@@ -47,7 +45,7 @@
     [self loadCustomViewData];
 }
 
-// 控件负值
+// 控件赋值
 - (void)loadCustomViewData {
     self.titleLabel.text = self.productDataModel.productName;
 }
@@ -65,14 +63,20 @@
  */
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
-        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,
-                                                                0,
-                                                                self.frame.size.width,
-                                                                self.frame.size.height)];
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         _titleLabel.textColor = [UIColor blackColor];
+        _titleLabel.textAlignment = NSTextAlignmentRight;
         _titleLabel.font = [UIFont systemFontOfSize:22];
     }
     return _titleLabel;
+}
+
+// 更新UI
+- (void)layoutSubviews {
+    self.titleLabel.frame = CGRectMake(0,
+                                       0,
+                                       self.frame.size.width,
+                                       self.frame.size.height);
 }
 
 @end
